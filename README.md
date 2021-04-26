@@ -1,6 +1,6 @@
 # batonSystems
 
-As part of this application i have created a trading stem as per the below requirement:
+As part of this application i have created a trading system as per the below requirement:
 Implement a high-frequency Exchange that receives both BUY orders & SELL orders and matches them based on the Symbol, Price and the sequence in which they were received. For each successful match, it creates a "Trade" record between the two parties that includes the two parties (Buyer & Seller) along with attributes such as the Symbol, Price, Trade Date, etc.
 
  I have assumed these orders are being fed into the Exchange by http call and hence exposed 4 endpoints.
