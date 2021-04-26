@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "0df24d5d-7a17-47e2-bf62-bc5e9cee0db8",
+		"name": "Baton_Systems",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sell_Stocks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sellerId\":\"Party A\",\n\t\"stock\": \"INFY\",\n\t\"price\": 600\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/sellStocks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"sellStocks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buy_Stocks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"buyerId\":\"Party C\",\n\t\"stock\": \"INFY\",\n\t\"price\": 600\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/buyStocks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"buyStocks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch_Parties_And_Stocks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/v1/trade/Party A/Party B/GOOG",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"trade",
+						"Party A",
+						"Party B",
+						"GOOG"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch_Stocks_And_Price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/v1/trade/GOOG/500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"trade",
+						"GOOG",
+						"500"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
